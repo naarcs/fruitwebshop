@@ -32,7 +32,7 @@ namespace fruitwebshop2._0.Controllers
             try
             {
                 var response = context.Fruits.FirstOrDefault(f => f.FruitId == id);
-                if (response == null)
+                if (response != null)
                 {
                     return BadRequest("Nincs ilyen gyümölcs.");
                 }
