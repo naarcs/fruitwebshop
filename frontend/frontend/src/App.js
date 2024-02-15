@@ -44,7 +44,7 @@ function App() {
             <ul className="navbar-nav">
               <li className="nav-item">
             <NavLink to={`/Home`} className="nav-link">
-                <span className="nav-link">Fóoldal</span>
+                <span className="nav-link">Főoldal</span>
                 </NavLink>
               </li>
               <li className="nav-item dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
