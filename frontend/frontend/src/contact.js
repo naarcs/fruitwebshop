@@ -32,14 +32,6 @@ export function Contact() {
       );
   };
 
-  //Az oldal tetejére ugrik kattintásra:
-  useEffect(() => {
-    window.scrollTo({
-      top: 50,
-      behavior: "instant",
-    });
-  }, []);
-
   return (
     <div className="p-5 m-auto text-center content bg-lavender img-up">
       <div
@@ -53,7 +45,7 @@ export function Contact() {
                 <div className="wpb_single_image wpb_content_element vc_align_center">
                     <figure className="wpb_wrapper vc_figure">
                         <div className="vc_single_image-wrapper vc_box_border_grey">
-                            <img width={25} height={38} src=""></img>
+                            <img width={25} height={38} src="/img/cim.png" alt="icon"></img>
                         </div>
                     </figure>
                 </div>
@@ -66,13 +58,39 @@ export function Contact() {
                 <div className="wpb_single_image wpb_content_element vc_align_center">
                     <figure className="wpb_wrapper vc_figure">
                         <div className="vc_single_image-wrapper vc_box_border_grey">
-                            <img width={38} height={32} src="" href=""></img>
+                            <img width={38} height={32} src="/img/email.png" alt="icon" href=""></img>
                         </div>
                     </figure>
                 </div>
                 <div className="wpb_text_column wpb_content_element wpb_wrapper">
                     <h3 style={{ textAlign: "center" }}>E-mail</h3>
                     <p style={{ textAlign: "center" }}>gardenofeden@gmail.com</p>
+                </div>
+            </div>
+            <div className="wpb_column wpb_column_container vc_column-inner vc_col_sm-3 wpb_wrapper">
+                <div className="wpb_single_image wpb_content_element vc_align_center">
+                    <figure className="wpb_wrapper vc_figure">
+                        <div className="vc_single_image-wrapper vc_box_border_grey">
+                            <img width={38} height={32} src="/img/facebook.png" alt="icon" href=""></img>
+                        </div>
+                    </figure>
+                </div>
+                <div className="wpb_text_column wpb_content_element wpb_wrapper">
+                    <h3 style={{ textAlign: "center" }}>Facebook</h3>
+                    <p style={{ textAlign: "center" }}>gardenofeden</p>
+                </div>
+            </div>
+            <div className="wpb_column wpb_column_container vc_column-inner vc_col_sm-3 wpb_wrapper">
+                <div className="wpb_single_image wpb_content_element vc_align_center">
+                    <figure className="wpb_wrapper vc_figure">
+                        <div className="vc_single_image-wrapper vc_box_border_grey">
+                            <img width={38} height={32} src="/img/insta.png" alt="icon" href=""></img>
+                        </div>
+                    </figure>
+                </div>
+                <div className="wpb_text_column wpb_content_element wpb_wrapper">
+                    <h3 style={{ textAlign: "center" }}>Instagram</h3>
+                    <p style={{ textAlign: "center" }}>gardenofeden.online</p>
                 </div>
             </div>
         </div>
