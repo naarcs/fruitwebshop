@@ -8,7 +8,7 @@ import Login from "./Login";
 import Registration from "./Registration";
 import AboutUs from "./aboutus";
 import Home from "./Home";
-
+import Gyumolcs from "./gyumolcs";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false); // bejelentkezés állapot
@@ -49,7 +49,7 @@ function App() {
                 </NavLink>
               </li>
               <li className="nav-item dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <NavLink to={`/products`} className="nav-link">
+              <NavLink to={`/gyumolcs`} className="nav-link">
                 <span className="nav-link dropdown-toggle">Termékek</span>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <NavLink id="" style={{ textDecoration: "none" }} to={""}>
@@ -67,9 +67,9 @@ function App() {
                         <s className="dropdown-item" href="3">Egzotikus gyümölcsök</s>
                       </li>
                     </NavLink>
-                    <NavLink id="" style={{ textDecoration: "none" }} to={""}>
+                    <NavLink to={`/minden`} id="" style={{ textDecoration: "none" }} >
                       <li>
-                        <s className="dropdown-item" href="3">Minden gyümölcs</s>
+                        <s className="dropdown-item" href="">Minden gyümölcs</s>
                       </li>
                     </NavLink>
                   </ul>
@@ -124,6 +124,8 @@ function App() {
         <Route path="/aboutus" exact element={<AboutUs/>}/>
         <Route path="/Login" exact element={<Login/>}/>
         <Route path="/Registration" exact element={<Registration/>}/>
+        <Route path="/minden" exact element={<Gyumolcs/>}/>
+      
         </Routes>
       </Router>
       <ToastContainer />
