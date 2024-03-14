@@ -67,6 +67,11 @@ function App() {
                         <s className="dropdown-item" href="3">Egzotikus gyümölcsök</s>
                       </li>
                     </NavLink>
+                    <NavLink id="" style={{ textDecoration: "none" }} to={""}>
+                      <li>
+                        <s className="dropdown-item" href="3">Minden gyümölcs</s>
+                      </li>
+                    </NavLink>
                   </ul>
               </NavLink>
               </li>
