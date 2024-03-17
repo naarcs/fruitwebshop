@@ -90,7 +90,7 @@ export function Login() {
           <div className="form-group">
             <label htmlFor="login-email">Felhasználónév:</label>
             <input
-            id="username"
+              id="username"
               title="username"
               type="text"
               name="username"
@@ -101,7 +101,7 @@ export function Login() {
           <div className="form-group">
             <label htmlFor="login-password">Jelszó:</label>
             <input
-            id="password"
+              id="password"
               title="password"
               type="password"
               name="password"
