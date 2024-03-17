@@ -8,7 +8,8 @@ import Login from "./Login";
 import Registration from "./Registration";
 import AboutUs from "./aboutus";
 import Home from "./Home";
-import Gyumolcs from "./gyumolcs";
+import Fruits from "./Fruits";
+import Cart from "./Cart";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false); // bejelentkezés állapot
@@ -44,54 +45,32 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-            <NavLink to={`/Home`} className="nav-link">
+                <NavLink to={`/Home`} className="nav-link">
                 <span className="nav-link">Főoldal</span>
                 </NavLink>
               </li>
-              <li className="nav-item dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <NavLink to={`/gyumolcs`} className="nav-link">
-                <span className="nav-link dropdown-toggle">Termékek</span>
-                  <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <NavLink id="" style={{ textDecoration: "none" }} to={""}>
-                      <li>
-                        <s className="dropdown-item" href="1">Általános gyümölcsök</s>
-                      </li>
-                    </NavLink>
-                    <NavLink id="" style={{ textDecoration: "none" }} to={""}>
-                      <li>
-                        <s className="dropdown-item" href="2">Szezonális gyümölcsök</s>
-                      </li>
-                    </NavLink>
-                    <NavLink id="" style={{ textDecoration: "none" }} to={""}>
-                      <li>
-                        <s className="dropdown-item" href="3">Egzotikus gyümölcsök</s>
-                      </li>
-                    </NavLink>
-                    <NavLink to={`/minden`} id="" style={{ textDecoration: "none" }} >
-                      <li>
-                        <s className="dropdown-item" href="">Minden gyümölcs</s>
-                      </li>
-                    </NavLink>
-                  </ul>
-              </NavLink>
+              <li className="nav-item">
+                <NavLink to={`/Fruits`} className="nav-link">
+                <span className="nav-link">Termékek</span>
+                </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to={`/contact`} className="nav-link">
+                <NavLink to={`/contact`} className="nav-link">
                 <span className="nav-link">Kapcsolat</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to={`/orderinformation`} className="nav-link">
+                <NavLink to={`/orderinformation`} className="nav-link">
                 <span className="nav-link">Rendelési információk</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to={`/aboutus`} className="nav-link">
+                <NavLink to={`/aboutus`} className="nav-link">
                 <span className="nav-link">Rólunk</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-              <NavLink to={`/cart`} className="nav-link">
+                <NavLink to={`/Cart`} className="nav-link">
                 <span className="nav-link">Kosár</span>
                 </NavLink>
               </li>
@@ -124,8 +103,8 @@ function App() {
         <Route path="/aboutus" exact element={<AboutUs/>}/>
         <Route path="/Login" exact element={<Login/>}/>
         <Route path="/Registration" exact element={<Registration/>}/>
-        <Route path="/minden" exact element={<Gyumolcs/>}/>
-      
+        <Route path="/Fruits" exact element={<Fruits/>}/>
+        <Route path="/Cart" exact element={<Cart/>}/>
         </Routes>
       </Router>
       <ToastContainer />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Gyumolcs = () => {
+const Fruits = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -48,4 +48,4 @@ const Gyumolcs = () => {
   );
 };
 
-export default Gyumolcs;
+export default Fruits;
